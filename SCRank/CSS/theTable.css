@@ -1,0 +1,66 @@
+table {
+    font-family: "Times New Roman", Times, serif;
+    border: 2px solid #190098;
+    background-color: #002650;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    border-collapse: collapse;
+    position: relative;
+}
+
+table td,
+table tr,
+table th {
+    border: 1px solid #00aeff;
+    padding: 3px 2px;
+}
+
+table tbody tr {
+    font-size: 17px;
+    color: rgb(116, 116, 116);
+}
+
+table tbody td {
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+}
+
+table tr:nth-child(even) {
+    background: #001845;
+}
+
+table thead {
+    background: #FFFFFF;
+    border-bottom: 3px solid #000000;
+    top: 40px;
+}
+
+table thead th {
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(252, 0, 0);
+    text-align: center;
+    border-left: 2px solid #00aeff;
+    top: 40px;
+}
+
+table thead th:first-child {
+    border-left: none;
+}
+
+table tfoot {
+    font-size: 12px;
+    font-weight: bold;
+    color: #E6E6E6;
+    background: #000000;
+    background: -moz-linear-gradient(top, #00aeff 0%, #191919 66%, #000000 100%);
+    background: -webkit-linear-gradient(top, #00aeff 0%, #191919 66%, #000000 100%);
+    background: linear-gradient(to bottom, #00aeff 0%, #191919 66%, #000000 100%);
+    border-top: 1px solid #4A4A4A;
+    top: 40px;
+}
+
+table tfoot td {
+    font-size: 12px;
+}

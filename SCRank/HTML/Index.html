@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>s</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/theTable.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body style="background-color:#002650">
+<button onclick="sortTable()">Sort</button>
+
+<div style="height:400px;overflow:auto;position:relative;top:40px;" class="table" id="app">
+        <table style = "width:100%;height:100%;overflow:auto;position:relative">
+        <tbody id="allTable">
+            <tr>
+                <th>Clan</th>
+                <th>Player Name</th>
+                <th>Race</th>
+                <th>MMR</th>
+            </tr>
+            <tr v-for="ladder in ladderTeams">
+                <td>{{ ladder.teamMembers[0].clanTag }}</td>
+                <td>{{ ladder.teamMembers[0].displayName }}</td>
+                <td>{{ ladder.teamMembers[0].favoriteRace }}</td>
+                <td>{{ ladder.mmr }}</td>
+            </tr>
+        </tbody>
+</table>
+</div>
+
+
+
+
+
+<script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/vue@2.6.0 "></script>
+<script defer src="../JS/theAPI.js"></script>
+<script defer src="../JS/tableSorting.js"></script>
+<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>window.sortTable();</script>
+</body>
+
+</html>
